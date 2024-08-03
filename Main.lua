@@ -97,7 +97,8 @@ end
 
 local PreviousBlock = require(game.ServerScriptService.BTC.GetLastBlock)()
 
-local b = Block(PreviousBlock["data"]["hash"],
+--local b = Block(PreviousBlock["data"]["hash"],
+local b = Block(PreviousBlock["hash"],
 	Transactions,
 	"201893210853", 
 	MerkleRoot, 
